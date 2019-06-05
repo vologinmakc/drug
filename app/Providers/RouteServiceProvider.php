@@ -35,11 +35,21 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
+        $this->mapDragsRoutes();
+
         $this->mapApiRoutes();
 
         $this->mapWebRoutes();
 
+
         //
+    }
+
+    protected function mapDragsRoutes()
+    {
+        Route::middleware('modules')
+            ->namespace('App\Modules\Drags')
+            ->group(base_path('routes/routes_drags.php'));
     }
 
     /**
