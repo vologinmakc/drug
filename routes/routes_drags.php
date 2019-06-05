@@ -18,6 +18,7 @@ Route::group([
     Route::get('/', 'IndexController@index')->name('drags.index');
 
     Route::post('/store', 'DragController@store')->name('drags.store');
+    Route::post('/search', 'DragController@search')->name('drags.search');
 
     Route::post('/ingredient/store', 'IngredientController@store')->name('drags.ingredient.store');
 

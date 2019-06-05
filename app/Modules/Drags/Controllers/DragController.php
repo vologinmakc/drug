@@ -13,7 +13,6 @@ class DragController extends Controller
 
     public function index()
     {
-        //
         return view('Drags::index');
     }
 
@@ -72,5 +71,10 @@ class DragController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function search(Request $request)
+    {
+        dd($request->all());
     }
 }

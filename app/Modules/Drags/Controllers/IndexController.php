@@ -3,6 +3,7 @@
 namespace App\Modules\Drags\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Modules\Drags\Models\Ingredient;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -14,8 +15,10 @@ class IndexController extends Controller
      */
     public function index()
     {
-        //
-        return view('Drags::index');
+        $ingredient = Ingredient::all();
+        return view('Drags::index', [
+            'ingredients' => $ingredient
+        ]);
     }
 
     /**

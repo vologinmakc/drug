@@ -43,6 +43,7 @@
                             <option value="{{$ingredient['id']}}">{{ $ingredient['name'] }}</option>
                         @endforeach
                     </select>
+                    <small>Не менее 2 ингридиентов</small>
                     <hr>
                     <input class="btn btn-primary btn-sm" type="submit" value="Создать лекарство">
                 </form>
