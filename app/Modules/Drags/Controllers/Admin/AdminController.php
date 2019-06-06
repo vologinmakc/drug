@@ -3,6 +3,7 @@
 namespace App\Modules\Drags\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Modules\Drags\Models\Drag;
 use App\Modules\Drags\Models\Ingredient;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,8 +15,10 @@ class AdminController extends Controller
         if (Auth::user())
         {
             $ingredient = Ingredient::all();
+            $drags = Drag::all();
             return view('Drags::admin.index', [
-                'ingredients' => $ingredient
+                'ingredients' => $ingredient,
+                'drags' => $drags
             ]);
         }
 

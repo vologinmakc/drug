@@ -2,29 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a31e901b-9b8a-4a32-b184-cdc7e2918f1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Controllers/Admin/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Controllers/DragController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Controllers/IndexController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Controllers/IngredientController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Migration/2019_06_05_041739_create_drags_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Migration/2019_06_05_042058_create_ingredients_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Migration/2019_06_05_042348_create_drag_ingredient_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Models/Drag.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Models/Ingredient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Views/admin/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/ModulesServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/module.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/routes_drags.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Views/admin/edit-drag.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Views/admin/edit-ingredients.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Views/layouts/public.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Drags/Views/search.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Drags/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Drags/Controllers/Admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Drags/Controllers/DragController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Drags/Controllers/DragController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Drags/Controllers/IngredientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Drags/Controllers/IngredientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Drags/Views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Drags/Views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Drags/Views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Drags/Views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/routes_drags.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/routes_drags.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Controllers/Admin/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="224">
+              <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="17" selection-end-column="33" />
               <folding>
                 <element signature="e#55#91#0#PHP" expanded="true" />
               </folding>
@@ -50,61 +38,88 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/admin/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="57" column="108" selection-start-line="57" selection-start-column="108" selection-end-line="57" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/routes_drags.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+            <state relative-caret-position="392">
+              <caret line="28" column="107" selection-start-line="28" selection-start-column="107" selection-end-line="28" selection-end-column="107" />
+              <folding>
+                <marker date="1559812561633" expanded="true" signature="382:967" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/admin/edit-ingredients.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="18" column="126" lean-forward="true" selection-start-line="18" selection-start-column="126" selection-end-line="18" selection-end-column="126" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Controllers/DragController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-              <folding>
-                <element signature="e#49#85#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Models/Drag.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Models/Ingredient.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/admin/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="40" column="76" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Controllers/IngredientController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+            <state relative-caret-position="495">
+              <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
               <folding>
                 <element signature="e#49#85#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Controllers/DragController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="122" selection-end-column="34" />
+              <folding>
+                <element signature="e#49#85#0#PHP" expanded="true" />
+                <element signature="e#432#479#0#PHP" />
+                <element signature="e#486#1216#0#PHP" />
+                <element signature="e#1223#1271#0#PHP" />
+                <element signature="e#1278#1313#0#PHP" />
+                <element signature="e#1320#1388#0#PHP" />
+                <element signature="e#1452#2853#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/admin/edit-drag.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="20" column="100" lean-forward="true" selection-start-line="20" selection-start-column="100" selection-end-line="20" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/search.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/layouts/public.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -134,7 +149,6 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Modules/Drags/Models/Ingredients.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Drags/Views/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Drags/Middleware/AdminMiddleware.php" />
         <option value="$PROJECT_DIR$/app/Modules/Drags/Controllers/Auth/VerificationController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
@@ -144,13 +158,18 @@
         <option value="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Modules/Drags/Routes/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Drags/Controllers/IngredientController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Drags/Controllers/Admin/AdminController.php" />
-        <option value="$PROJECT_DIR$/routes/routes_drags.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Drags/Views/admin/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Drags/Models/Drag.php" />
         <option value="$PROJECT_DIR$/app/Modules/Drags/Models/Ingredient.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Drags/Views/layouts/public.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Drags/Views/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Drags/Views/search.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Drags/Views/admin/edit-ingredients.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Drags/Views/admin/edit-drag.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Drags/Controllers/Admin/AdminController.php" />
         <option value="$PROJECT_DIR$/app/Modules/Drags/Controllers/DragController.php" />
+        <option value="$PROJECT_DIR$/routes/routes_drags.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Drags/Views/admin/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Drags/Controllers/IngredientController.php" />
       </list>
     </option>
   </component>
@@ -297,14 +316,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
               <item name="Drags" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Drags" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -315,6 +326,15 @@
               <item name="Drags" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Drags" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -340,6 +360,8 @@
       <recent name="C:\xampp\htdocs\test.loc\app\Modules\Drags\Controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\test.loc\app\Modules\Drags\Views\admin" />
+      <recent name="C:\xampp\htdocs\test.loc\app\Modules\Drags\Views" />
       <recent name="C:\xampp\htdocs\test.loc\routes" />
       <recent name="C:\xampp\htdocs\test.loc\app\Modules\Drags\Controllers\Auth" />
       <recent name="C:\xampp\htdocs\test.loc\app\Modules\Drags\Controllers" />
@@ -375,18 +397,26 @@
       <updated>1559656012111</updated>
       <workItem from="1559656013487" duration="704000" />
       <workItem from="1559700181244" duration="20195000" />
-      <workItem from="1559722788269" duration="6223000" />
+      <workItem from="1559722788269" duration="30395000" />
     </task>
+    <task id="LOCAL-00001" summary="create drags">
+      <created>1559729203848</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559729203849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27122000" />
+    <option name="totallyTimeSpent" value="51294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19261745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1295302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -432,6 +462,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create drags" />
+    <option name="LAST_COMMIT_MESSAGE" value="create drags" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env.example">
@@ -483,13 +517,6 @@
           <folding>
             <element signature="e#49#85#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -603,44 +630,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Controllers/IngredientController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
-          <folding>
-            <element signature="e#49#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Controllers/Admin/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="e#55#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/routes_drags.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/admin/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="40" column="76" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Models/Drag.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -651,10 +654,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Controllers/DragController.php">
+    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/admin/edit-ingredients.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="126" lean-forward="true" selection-start-line="18" selection-start-column="126" selection-end-line="18" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/layouts/public.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/admin/edit-drag.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="100" lean-forward="true" selection-start-line="20" selection-start-column="100" selection-end-line="20" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Controllers/Admin/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#55#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Views/admin/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="57" column="108" selection-start-line="57" selection-start-column="108" selection-end-line="57" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/routes_drags.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
-          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+          <caret line="28" column="107" selection-start-line="28" selection-start-column="107" selection-end-line="28" selection-end-column="107" />
+          <folding>
+            <marker date="1559812561633" expanded="true" signature="382:967" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Controllers/DragController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="122" selection-end-column="34" />
+          <folding>
+            <element signature="e#49#85#0#PHP" expanded="true" />
+            <element signature="e#432#479#0#PHP" />
+            <element signature="e#486#1216#0#PHP" />
+            <element signature="e#1223#1271#0#PHP" />
+            <element signature="e#1278#1313#0#PHP" />
+            <element signature="e#1320#1388#0#PHP" />
+            <element signature="e#1452#2853#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Drags/Controllers/IngredientController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
           <folding>
             <element signature="e#49#85#0#PHP" expanded="true" />
           </folding>
