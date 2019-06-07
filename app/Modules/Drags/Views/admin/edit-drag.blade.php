@@ -8,12 +8,15 @@
     </div>
     <div class="row">
         <div class="col">
-            <h4>Изменить ингридиент</h4>
+            <h4>Изменить лекарство</h4>
             <div>
                 <form action="{{ URL::route('drags.update', ['Drag' => $drag]) }}" method="post" name="update_drag">
                     @csrf
                     <label for="ingredient_name">Название:</label>
                     <input class="form-control" type="text" name="name" value="{{ $drag->name }}">
+                    @foreach($drag->ingredients as $ingredient)
+                        <small>{{$ingredient->name}}</small><br>
+                    @endforeach
 
                     <label for=""><small>Для множественного выбора используйте Ctrl</small></label><br>
                     <select class="custom-select" size="3" name="ingredients[]" multiple="multiple" required>

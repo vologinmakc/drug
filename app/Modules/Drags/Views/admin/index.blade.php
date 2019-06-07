@@ -8,7 +8,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <h4>Добавить ингридиент</h4>
+                <h4>Добавить ингредиент</h4>
                 <div>
                     <form action="{{ URL::route('drags.ingredient.store') }}" method="post" name="create_ingredient">
                         @csrf
@@ -50,7 +50,7 @@
 
         <div class="row">
             <div class="col">
-                <h4>Измененить ингридиент</h4>
+                <h4>Изменить  ингредиент</h4>
                 <div>
                     <small>Доступные ингридиенты</small>
                     <br>
@@ -78,7 +78,7 @@
 
         <div class="row">
             <div class="col">
-                <h4>Измененить лекарство</h4>
+                <h4>Изменить  лекарство</h4>
                 <div>
                     <small>Доступные лекарствa</small>
                     <br>
@@ -89,7 +89,7 @@
                                 <input class="btn btn-sm btn-outline-danger" type="submit" value="Удалить"
                                        @if($drag->deleted == true)
                                        disabled
-                                        @endif/>
+                                       @endif/>
                                 @csrf
                             </form>
                             <hr>

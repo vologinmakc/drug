@@ -61,7 +61,7 @@ class DragController extends Controller
     public function edit($id)
     {
         $drag = Drag::find($id);
-        $drag_ingredients = $drag->ingredients()->get();
+        $drag_ingredients = Ingredient::all();
 
         return view('Drags::admin.edit-drag', [
             'drag' => $drag,
@@ -95,10 +95,9 @@ class DragController extends Controller
             # первым делом сохраним Лекарство, если более одного ингридиента!
             if (isset($data['ingredients']) and count($data['ingredients']) > 1)
             {
-                $drag = new Drag([
-                    'name' => $data['name']
-                ]);
-
+                $drag = Drag::find($id);
+                $drag->name = $data['name'];
+                $drag->ingredients()->detach();
                 $drag->save();
 
                 foreach ($data['ingredients'] as $ingredient)
@@ -108,7 +107,13 @@ class DragController extends Controller
                 }
             }
 
-            return redirect()->back();
+            $ingredient = Ingredient::all();
+            $drags = Drag::all();
+
+            return view('Drags::admin.index', [
+                'ingredients' => $ingredient,
+                'drags' => $drags
+            ]);
         }
     }
 
