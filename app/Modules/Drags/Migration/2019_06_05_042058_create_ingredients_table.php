@@ -17,6 +17,7 @@ class CreateIngredientsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->boolean('active')->default(true);
+            $table->boolean('deleted')->default(false);
             $table->timestamps();
         });
     }

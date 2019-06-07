@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Drag extends Model
 {
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'deleted'];
 
     public function ingredients()
     {

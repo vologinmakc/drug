@@ -16,6 +16,7 @@ class CreateDragsTable extends Migration
         Schema::create('drags', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->boolean('deleted')->default(false);
             $table->timestamps();
         });
     }

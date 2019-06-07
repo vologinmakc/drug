@@ -11,7 +11,10 @@
             @if(isset($drags))
                 @foreach($drags as $drag)
                     <h5>{{ $drag->name }}</h5>
-                    <small>Количество ингридиентов:{{ $drag->ingredients()->count() }}</small>
+                    <small>Количество ингридиентов:{{ $drag->ingredients()->count() }}</small><br>
+                    @foreach($drag->ingredients as $ingredient)
+                        <small class="text-info">{{ $ingredient->name }}</small><br>
+                    @endforeach
                     <hr>
                 @endforeach
             @endif

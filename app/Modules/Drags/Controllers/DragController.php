@@ -116,23 +116,51 @@ class DragController extends Controller
     public function destroy($id)
     {
         $drag = Drag::find($id);
-        $drag->ingredients()->detach();
-
-        $drag->delete();
+        $drag->deleted = true;
+        $drag->save();
 
         return redirect()->back();
     }
 
     public function search(Request $request)
     {
+        $this->create_validator($request);
 
+        $drags = $this->search_drags($request);
+
+        if ($drags)
+        {
+            # Добавим доп поле с количеством элементов
+            $drags->transform(function ($item)
+            {
+                $item->count_ingredients = $item->ingredients()->count();
+                foreach ($item->ingredients as $ingredient_active)
+                {
+                    if (($ingredient_active->active == false) or ($ingredient_active->deleted == true))
+                    {
+                        $item->active = 'forbidden';
+                    }
+                }
+
+                return $item;
+            });
+
+
+            return view('Drags::search', [
+                'drags' => $drags->where('active', '!=', 'forbidden')->where('deleted', '!=', true)
+                    ->sortByDesc('count_ingredients')
+            ]);
+        }
+    }
+
+    public function create_validator($request)
+    {
         Validator::extend('ingredients_array', function ($attribute, $value, $parameters)
         {
             if (is_array($value) and count($value) > 1)
             {
                 return true;
             }
-
             session()->flash('warning', 'не ленись, добавь веществ');
             return false;
         });
@@ -140,35 +168,29 @@ class DragController extends Controller
         $this->validate($request, [
             'ingredients' => 'ingredients_array'
         ]);
+    }
 
-        # Число искомых ингридиентов
-        $ingredients_counts = count($request['ingredients']);
-
-        # Получим все лекаства по ингридиентам
+    public function search_drags($request)
+    {
+        # Получим все лекаства по ингридиентам с точным совпадением по ингридиентам
         $drags = Drag::whereHas('ingredients', function ($q) use ($request)
         {
-            $q->whereIn('ingredient_id', $request['ingredients']);
+            $q->whereIn('ingredient_id', $request['ingredients'])->havingRaw('count(*) >=' . count($request['ingredients']))
+                ->where('ingredients.active', true)->where('ingredients.deleted', false);
+
         })->with('ingredients')->get();
 
-        # Добавим доп поле с количеством элементов
-        $drags->transform(function ($item)
+        # Если точных совпадений нет то ищем частичные
+        if (!$drags->count() > 0)
         {
-            $item->count_ingredients = $item->ingredients()->count();
-            foreach ($item->ingredients as $ingredient_active)
+            $drags = Drag::whereHas('ingredients', function ($q) use ($request)
             {
-                if ($ingredient_active->active == false)
-                {
-                    $item->active = 'forbidden';
-                }
-            }
+                $q->whereIn('ingredient_id', $request['ingredients'])->havingRaw('count(*) >= 2');
 
-            return $item;
-        });
+            })->with('ingredients')->get();
 
+        }
 
-        return view('Drags::search', [
-            'drags' => $drags,
-            'ingredients_counts' => $ingredients_counts
-        ]);
+        return $drags;
     }
 }

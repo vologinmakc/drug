@@ -8,7 +8,8 @@ class Ingredient extends Model
 {
     protected $fillable = [
         'name',
-        'active'
+        'active',
+        'deleted'
     ];
 
     public function Drags()
